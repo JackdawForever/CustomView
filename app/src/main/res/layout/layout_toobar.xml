@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_80"
+    android:background="@color/colorToolbar"
+    android:orientation="vertical">
+     <!--沉浸式-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+
+        <!--左边返回可能是返回箭头和文本的组合-->
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="onBackView">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/dp_18"
+                android:src="@mipmap/ic_toolbar_back" />
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/iv_back"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/colorWhiteFont"
+                android:textSize="@dimen/sp_14" />
+
+        </RelativeLayout>
+
+        <!--中间标题文本-->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="title"
+            android:textColor="@color/colorWhiteFont"
+            android:textSize="@dimen/sp_18" />
+
+        <!--右边菜单有文本或者图标两种-->
+        <ImageButton
+            android:id="@+id/img_btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:paddingRight="@dimen/dp_18"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="@dimen/dp_18"
+            android:text="menu"
+            android:textColor="@color/colorWhiteFont"
+            android:textSize="@dimen/sp_14"
+            android:visibility="visible" />
+    </RelativeLayout>
+</LinearLayout>
