@@ -6,10 +6,10 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimary</item><!--状态栏的蓝色-->
         <item name="colorAccent">@color/blue</item>
-        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless
+        <item name="buttonStyle">@style/Widget.AppCompat.Button.Borderless
         </item><!--去除按钮自带阴影-->
         <item name="windowActionBar">false</item>
-        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
 </resources>
