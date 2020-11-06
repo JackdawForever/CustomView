@@ -8,12 +8,16 @@
 <com.example.myapplication.simple.TooBarLayout
     android:layout_width="match_parent"
     android:layout_height="@dimen/dp_80"
-    app:tl_titleText="Title"/>
+    app:tl_titleText="简单的自定义View"/>
 
 
     <com.example.myapplication.simple.ScrollTextView
+        android:id="@+id/scroll_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="测试跑马灯"/>
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/blue"
+        app:text_color="@color/white"
+        app:text_size="@dimen/dp_6"/>
+
 
 </LinearLayout>

@@ -9,7 +9,11 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.example.myapplication.simple.ScrollTextView;
+
 public class MainActivity extends AppCompatActivity {
+
+    private ScrollTextView scrollTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,5 +27,11 @@ public class MainActivity extends AppCompatActivity {
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.setStatusBarColor(Color.TRANSPARENT);
         }
+        initView();
+    }
+
+    private void initView() {
+        scrollTextView = findViewById(R.id.scroll_view);
+        scrollTextView.setContent("锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。");
     }
 }

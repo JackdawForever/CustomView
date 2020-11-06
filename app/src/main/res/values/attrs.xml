@@ -9,28 +9,34 @@
         <attr name="tl_isShowTitle" format="boolean" />
         <!--显示右上角的菜单-->
         <attr name="tl_showMenu" format="enum">
-            <enum name="none" value="0"/>
-            <enum name="text" value="1"/>
-            <enum name="imgbtn" value="2"/>
+            <enum name="none" value="0" />
+            <enum name="text" value="1" />
+            <enum name="imgbtn" value="2" />
         </attr>
         <!--返回文本内容-->
-        <attr name="tl_backText" format="string"/>
+        <attr name="tl_backText" format="string" />
         <!--返回按钮图片-->
         <attr name="tl_backImg" format="reference" />
         <!--标题文本大小-->
-        <attr name="tl_titleSize" format="dimension"/>
+        <attr name="tl_titleSize" format="dimension" />
         <!--标题文本颜色-->
-        <attr name="tl_titleColor" format="color"/>
+        <attr name="tl_titleColor" format="color" />
         <!--标题文本内容-->
-        <attr name="tl_titleText" format="string"/>
+        <attr name="tl_titleText" format="string" />
         <!--右上角菜单文本内容-->
-        <attr name="tl_tvMenuText" format="string"/>
+        <attr name="tl_tvMenuText" format="string" />
         <!--右上角菜单文本大小-->
-        <attr name="tl_tvMenuTextSize" format="dimension"/>
+        <attr name="tl_tvMenuTextSize" format="dimension" />
         <!--右上角菜单文本颜色-->
-        <attr name="tl_tvMenuTextColor" format="color"/>
+        <attr name="tl_tvMenuTextColor" format="color" />
         <!--右上角菜单图片-->
-        <attr name="tl_btnMenuSrc" format="reference"/>
+        <attr name="tl_btnMenuSrc" format="reference" />
+    </declare-styleable>
+
+    <!--走马灯-->
+    <declare-styleable name="ScrollTextView">
+        <attr name="text_color" format="color" /><!-- 文字颜色 -->
+        <attr name="text_size" format="dimension" /><!-- 文字大小 -->
     </declare-styleable>
 
 </resources>
