@@ -33,7 +33,7 @@
         <attr name="tl_btnMenuSrc" format="reference" />
     </declare-styleable>
 
-    <!--走马灯-->
+    <!--跑马灯-->
     <declare-styleable name="ScrollTextView">
         <attr name="text_color" format="color" /><!-- 文字颜色 -->
         <attr name="text_size" format="dimension" /><!-- 文字大小 -->

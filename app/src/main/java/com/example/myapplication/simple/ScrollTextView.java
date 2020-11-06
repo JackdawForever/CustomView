@@ -13,18 +13,15 @@ import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.AppCompatTextView;
-import androidx.appcompat.widget.TintTypedArray;
 
 
 import com.example.myapplication.R;
 
-import java.util.Random;
 
 /**
  * @author: Jackdaw Forever
  * @date: 2020/11/2 13:23
- * @description 简单的走马灯
+ * @description 简单的跑马灯
  */
 public class ScrollTextView extends View implements Runnable {
     private final static String TAG = "ScrollTextView";
